@@ -1,16 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>欢迎页面</title>
-    <link rel="stylesheet" href="/webjars/bootstrap/5.1.3s/bootstrap.min.css">
-
+    <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css">
     <script src="/webjars/jquery/3.6.0/jquery.min.js "></script>
     <script src="/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            background-color:blanchedalmond;
+
+        }
+
+        .icon {
+            margin-right: 20px;
+        }
+
+        .btn {
+            background-color: darkcyan;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .search-container {
+            display: flex;
+            margin-right: auto;
+        }
+
+        .search-box {
+            padding: 6px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .login-btn {
+            margin-left: auto;
+        }
+        .card {
+            background-color: #f1f1f1;
+            width: 20%;
+            margin: 70px;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .card h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card p {
+            margin-bottom: 20px;
+        }
+        .divider {
+            border-top: 1px solid #999;
+            margin-top: 20px;
+        }
+        .container-out {
+            background-color: floralwhite;
+
+        }
+
+
+    </style>
 </head>
 <body>
-<h2>Spring Boot 的欢迎页面</h2>
+
 <div class="container">
-    <div class="alert alert-success">
-        <strong>bootstrap 引入成功！</strong>
+    <div class="icon">
+        <img src="001.png" alt="图标" width="40" height="56">
+    </div>
+    <button class="btn">首页</button>
+    <button class="btn">会员</button>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="搜索...">
+        <button class="btn">搜索</button>
+    </div>
+    <div class="login-btn">
+        <button class="btn">登录</button>
+        <button class="btn">注册</button>
     </div>
 </div>
+
+<div class="container-out">
+    <div class="card">
+        <img src="002.jpeg" alt="Avatar">
+        <h4>Joh</h4>
+        <button>关注</button>
+        <p>愿你心向光明</p>
+        <div class="divider"></div>
+    </div>
+
+    <div class="card">
+        <img src="003.png" alt="Avatar">
+        <h4>Jan</h4>
+        <button>关注</button>
+        <p>信念，是实现梦想的基石；奋斗，是铸就辉煌的必由之路</p>
+        <div class="divider"></div>
+    </div>
+
+    <div class="card">
+        <img src="004.webp" alt="Avatar">
+        <h4>珍妮</h4>
+        <button>关注</button>
+        <p>大家请关注我</p>
+        <div class="divider"></div>
+    </div>
+</div>
+<div class="container-out">
+    <div class="card">
+        <img src="005.webp" alt="Avatar">
+        <h4>蛊真人</h4>
+        <button>关注</button>
+        <p>岁月不居，时节如流</p>
+        <div class="divider"></div>
+    </div>
+
+    <div class="card">
+        <img src="006.webp" alt="Avatar">
+        <h4>季真人</h4>
+        <button>关注</button>
+        <p>天下英雄真如过江之鲫</p>
+        <div class="divider"></div>
+    </div>
+
+    <div class="card">
+        <img src="008.webp" alt="Avatar">
+        <h4>宅组</h4>
+        <button>关注</button>
+        <p>风雨多经人不老，关山初度路犹长</p>
+        <div class="divider"></div>
+    </div>
+</div>
+
 </body>
+</html>
