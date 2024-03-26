@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import top.xiufenghuang.entity.Article;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
 @Slf4j
 public class ArticleJDBCDAOTest{
@@ -36,7 +34,7 @@ public class ArticleJDBCDAOTest{
 
     @Test
     void findOne() {
-        log.info("查询一个:{}", articleJDBCDAO.findById(1).toString());
+        log.info("查询一个:{}", articleJDBCDAO.findById(4).toString());
     }
     @Test
     void findAll() {
@@ -44,7 +42,7 @@ public class ArticleJDBCDAOTest{
     }
     @Test
     void del() {
-        articleJDBCDAO.deleteById(1);
+        articleJDBCDAO.deleteById(4);
         log.info("删除成功");
     }
 }

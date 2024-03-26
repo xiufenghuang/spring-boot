@@ -1,8 +1,8 @@
 package top.xiufenghuang.service.impl;
 
+import top.xiufenghuang.dao.ArticleJpaDAO;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
-import top.xiufenghuang.dao.ArticleJpaDAO;
 import top.xiufenghuang.entity.Article;
 import top.xiufenghuang.service.ArticleJpaService;
 

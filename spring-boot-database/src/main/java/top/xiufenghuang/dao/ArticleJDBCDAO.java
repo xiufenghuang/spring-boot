@@ -1,6 +1,5 @@
 package top.xiufenghuang.dao;
 
-import com.mysql.cj.util.DnsSrv;
 import jakarta.annotation.Resource;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

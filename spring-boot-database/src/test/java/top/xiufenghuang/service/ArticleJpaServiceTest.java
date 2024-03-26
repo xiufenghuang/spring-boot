@@ -1,12 +1,11 @@
 package top.xiufenghuang.service;
 
+import top.xiufenghuang.service.impl.ArticleJpaServiceimpl;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import top.xiufenghuang.entity.Article;
-import top.xiufenghuang.service.impl.ArticleJpaServiceimpl;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ArticleJpaServiceTest {
     @Resource
@@ -46,6 +45,6 @@ class ArticleJpaServiceTest {
 
     @Test
     void deleteArticle() {
-        articleJpaService.deleteArticle(2);
+        articleJpaService.deleteArticle(3);
     }
 }

@@ -1,5 +1,3 @@
-server:
-  port: 9099
 spring:
   freemarker:
     cache: false # 缓存配置 开发阶段应该配置为false 因为经常会改
