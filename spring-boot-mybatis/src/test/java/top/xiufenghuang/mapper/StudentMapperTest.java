@@ -40,7 +40,7 @@ class StudentMapperTest {
 
     @Test
     void deleteById() {
-        int n = studentMapper.deleteById(1002);
+        int n = studentMapper.deleteById(1003);
         assertEquals(1, n);
     }
     //批量添加
@@ -49,7 +49,7 @@ class StudentMapperTest {
         List<Student> students = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             Student student = Student.builder()
-                    .studentId(9000 + i)
+                    .studentId(5000 + i)
                     .clazzId(1)
                     .studentName("测试学生" + i)
                     .hometown("江苏南京")
@@ -63,7 +63,7 @@ class StudentMapperTest {
     //批量删除
     @Test
     void batchDelete() {
-        List<Integer> idList = List.of(8000, 8001, 8002);
+        List<Integer> idList = List.of(1001, 1004, 1005);
         int n = studentMapper.batchDelete(idList);
         assertEquals(3, n);
     }
@@ -77,7 +77,7 @@ class StudentMapperTest {
 //根据学生id查询（关联查询所属班级信息）
     @Test
     void getStudentManyToOne() {
-        Student student = studentMapper.getStudentManyToOne(1001);
+        Student student = studentMapper.getStudentManyToOne(1006);
         log.info(String.valueOf(student));
     }
 
