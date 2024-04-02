@@ -11,11 +11,8 @@ import top.xiufenghuang.mapper.UserMapper;
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class UserServicePageTest{
-
   @Autowired
     private UserMapper mapper;
-
-
     @Test
     public void page() {
         Page<UserDO> page = new Page<>(1, 3);

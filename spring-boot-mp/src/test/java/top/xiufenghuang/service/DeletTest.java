@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
     @Test
     public void update() {
         //方式一: 根据id更新
-        mapper.updateById(new UserDO().setId(1).setPhone("13800001111"));
+        mapper.updateById(new UserDO().setId(1).setPhone("13323232312"));
         //实际执行sql: UPDATE user SET phone=? WHERE id=? AND deleted=0
     }
 

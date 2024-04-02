@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
         @Test
         public void insert() {
-            UserDO userDO = new UserDO().setUsername("小菲").setPhone("13800001111").setGender("女");
+            UserDO userDO = new UserDO().setUsername("华盛顿").setPhone("1332323311").setGender("男");
             mapper.insert(userDO);
             // 成功拿到回写的userId
             System.out.println(userDO.getId());
@@ -34,18 +34,18 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         public void delete() {
             //mapper.deleteById(4);
-            mapper.delete(new LambdaQueryWrapper<UserDO>().eq(UserDO::getUsername, "张三"));
+            mapper.delete(new LambdaQueryWrapper<UserDO>().eq(UserDO::getUsername, "小菲"));
         }
 
         @Test
         public void update() {
             //方式一: 根据id更新
-            mapper.updateById(new UserDO().setId(1).setPhone("13800002222"));
+            mapper.updateById(new UserDO().setId(1).setPhone("1380323311"));
             //方式二: 左边是需要更新的值 右边是where条件
-            mapper.update(new UserDO().setUsername("张三丰"), new LambdaQueryWrapper<UserDO>().eq(UserDO::getPhone, "13900001111"));
+            mapper.update(new UserDO().setUsername("张三丰"), new LambdaQueryWrapper<UserDO>().eq(UserDO::getPhone, "1380323311"));
             //方式三：不创建User对象
             mapper.update(null, new LambdaUpdateWrapper<UserDO>()
-                    .set(UserDO::getCreateTime, LocalDateTime.now()).eq(UserDO::getUsername, "李四"));
+                    .set(UserDO::getCreateTime, LocalDateTime.now()).eq(UserDO::getUsername, "小一"));
         }
 
         @Test
@@ -55,7 +55,7 @@ import static org.junit.jupiter.api.Assertions.*;
             System.out.println("********** 1 *************");
             System.out.println(userDO);
             //2、根据手机号获取单个
-            UserDO userDO1 = mapper.selectOne(new LambdaQueryWrapper<UserDO>().eq(UserDO::getPhone, "13900002222"));
+            UserDO userDO1 = mapper.selectOne(new LambdaQueryWrapper<UserDO>().eq(UserDO::getPhone, "18812345678"));
             System.out.println("********** 2 *************");
             System.out.println(userDO1);
             //3、获取集合
