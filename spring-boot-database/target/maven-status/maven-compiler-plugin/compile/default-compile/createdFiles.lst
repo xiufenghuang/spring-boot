@@ -1,0 +1,8 @@
+top\xiufenghuang\service\impl\ArticleJpaServiceimpl.class
+top\xiufenghuang\dao\ArticleJpaDAO.class
+top\xiufenghuang\DataBaseApplication.class
+top\xiufenghuang\mapper\ArticleMapper.class
+top\xiufenghuang\dao\ArticleJDBCDAO.class
+top\xiufenghuang\entity\Article.class
+top\xiufenghuang\entity\Article$ArticleBuilder.class
+top\xiufenghuang\service\ArticleJpaService.class

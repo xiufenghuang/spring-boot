@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+
+logging:
+  level:
+    root: info
+    top.kaalee.controller: debug
+  file:
+    path: C:\Users\hxf13\Desktop\logs
+    name: C:\Users\hxf13\Desktop\logsspring-boot-logs.log
+  pattern:
+    console: '%red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)'

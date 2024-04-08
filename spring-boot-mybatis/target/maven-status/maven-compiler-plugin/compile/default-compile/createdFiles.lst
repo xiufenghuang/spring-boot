@@ -1,0 +1,9 @@
+top\xiufenghuang\service\impl\ArticleServiceImpl.class
+top\xiufenghuang\controller\ArticleController.class
+top\xiufenghuang\QuickStartApplication.class
+top\xiufenghuang\mapper\StudentMapper.class
+top\xiufenghuang\entity\Student.class
+top\xiufenghuang\service\ArticleService.class
+top\xiufenghuang\dao\ArticleJDBCDAO.class
+top\xiufenghuang\entity\Article.class
+top\xiufenghuang\entity\Article$ArticleBuilder.class

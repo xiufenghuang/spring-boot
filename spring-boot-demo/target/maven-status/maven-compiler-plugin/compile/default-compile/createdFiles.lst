@@ -1,0 +1,7 @@
+top\xiufenghuang\domain\Reader$ReaderBuilder.class
+top\xiufenghuang\domain\Article.class
+top\xiufenghuang\controller\ArticleController.class
+top\xiufenghuang\QuickStartApplication.class
+top\xiufenghuang\domain\Reader.class
+top\xiufenghuang\domain\Article$ArticleBuilder.class
+top\xiufenghuang\response\AjaxResponse.class
